@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Explore</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .main-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+        .destination, .testimonial, .package {
+            margin: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .destination img, .package img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .destination h3, .package h3 {
+            margin-top: 10px;
+        }
+
+        .testimonial {
+            background-color: #e2e2e2;
+        }
+
+        .pricing {
+            font-size: 1.2em;
+            color: #ff6600;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Explore the World with Us!</h1>
+        <p>Your dream destinations await</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Destinations</a>
+        <a href="#">Packages</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <section class="main-section">
+        <!-- Featured Destinations -->
+        <div class="destination">
+            <img src="https://via.placeholder.com/300x200?text=Paris" alt="Paris">
+            <h3>Paris, France</h3>
+            <p>The City of Lights, a place of romance and culture. Discover its beauty!</p>
+        </div>
+
+        <div class="destination">
+            <img src="https://via.placeholder.com/300x200?text=Tokyo" alt="Tokyo">
+            <h3>Tokyo, Japan</h3>
+            <p>A perfect blend of tradition and modernity. Immerse yourself in the heart of Japan.</p>
+        </div>
+
+        <div class="destination">
+            <img src="https://via.placeholder.com/300x200?text=Bali" alt="Bali">
+            <h3>Bali, Indonesia</h3>
+            <p>A tropical paradise with beautiful beaches and rich cultural experiences.</p>
+        </div>
+    </section>
+
+    <section class="main-section">
+        <!-- Travel Packages -->
+        <div class="package">
+            <img src="https://via.placeholder.com/300x200?text=Package+1" alt="Package 1">
+            <h3>Romantic Getaway</h3>
+            <p>Escape with your loved one to Paris for 7 days</p>
+            <div class="pricing">$1,999 per couple</div>
+        </div>
+
+        <div class="package">
+            <img src="https://via.placeholder.com/300x200?text=Package+2" alt="Package 2">
+            <h3>Tokyo Adventure</h3>
+            <p>Explore Tokyo for 5 days with guided tours.</p>
+            <div class="pricing">$1,499 per person</div>
+        </div>
+
+        <div class="package">
+            <img src="https://via.placeholder.com/300x200?text=Package+3" alt="Package 3">
+            <h3>Bali Bliss</h3>
+            <p>Relax and rejuvenate with a 6-day stay in Bali.</p>
+            <div class="pricing">$1,799 per person</div>
+        </div>
+    </section>
+
+    <section class="main-section">
+        <!-- Testimonials -->
+        <div class="testimonial">
+            <h3>John D.</h3>
+            <p>"The trip to Paris was magical! The arrangements were perfect and everything went smoothly. Highly recommend!"</p>
+        </div>
+
+        <div class="testimonial">
+            <h3>Sarah L.</h3>
+            <p>"Tokyo was a dream come true! The package included everything we could ever want. Thanks for such an amazing experience!"</p>
+        </div>
+
+        <div class="testimonial">
+            <h3>Mike R.</h3>
+            <p>"Bali was paradise! The beaches, the culture, and the food were beyond expectations. Will definitely travel again!"</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Travel Explore. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
