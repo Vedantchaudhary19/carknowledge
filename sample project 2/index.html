@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Changer</title>
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: background-color 0.5s ease;
+    }
+
+    .container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #444;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #666;
+    }
+
+    #colorCode {
+      margin-top: 15px;
+      font-size: 1.1rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Color Changer</h1>
+    <button id="changeColorBtn">Change Background Color</button>
+    <p id="colorCode">Current Color: #ffffff</p>
+  </div>
+
+  <script>
+    function getRandomColor() {
+      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+      return randomColor;
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const changeColorBtn = document.getElementById('changeColorBtn');
+      const colorCodeText = document.getElementById('colorCode');
+
+      changeColorBtn.addEventListener('click', function () {
+        const newColor = getRandomColor();
+        document.body.style.backgroundColor = newColor;
+        colorCodeText.textContent = `Current Color: ${newColor}`;
+      });
+    });
+  </script>
+</body>
+</html>
